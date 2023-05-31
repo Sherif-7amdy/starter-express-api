@@ -10,7 +10,7 @@ const options = {
   rejectUnauthorized: false
 };
 
-app.get('/akotv', (req, res) => {
+app.get('/akotv2', (req, res) => {
   const s = req.query.s || 'default value';
   https.get('http://config.e-droid.net/srv/config.php?v=149&vname=1.7&idapp=2336559&idusu=0&cod_g=&gp=0&am=0&idl=ar&pa_env=1&pa=AE&pn=com.arabstar.tvconnect&fus=010100000000&aid=9ae7f3cc2d5f848a', options, (response) => {
     let data = '';
